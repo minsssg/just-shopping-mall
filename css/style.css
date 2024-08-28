@@ -25,6 +25,10 @@ a {
   color: inherit;
 }
 
+a:active {
+  opacity: .7;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -51,7 +55,8 @@ body {
   border-radius: 6px;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:active {
   opacity: .7;
 }
 
@@ -243,12 +248,24 @@ nav > ul > li .sub li a {
   align-items: center;
 }
 
+.tab .gallery .tab-content > div {
+  box-shadow: 0 5px 10px rgba(0,0,0,.7);
+}
+
 /* BANNER & SHORTCUT */
+.con2 > a,
+.con3 > a {
+  position: relative;
+}
+
+.con2 a:active {
+  z-index: 1;
+}
+
 .con2 img,
 .con3 img {
   position: relative;
 }
-
 .con2 img:hover,
 .con3 img:hover {
   transform: scale(1.1);
